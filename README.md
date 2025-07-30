@@ -11,7 +11,7 @@
 
 </div>
 
-The MMFT OpenSLAice is a specialized slicer for masked sterolithography (mSLA) 3D printing of microfluidic devices. It addresses the unique challenges of printing microfluidic devices with high precision and reliability. It is part of the [Munich Microfluidics Toolkit (MMFT)](https://www.cda.cit.tum.de/research/microfluidics/munich-microfluidics-toolkit/) by the [Chair for Design Automation](https://www.cda.cit.tum.de/) at the Technical University of Munich.
+OpenSLAice is a specialized slicer for masked sterolithography (mSLA) 3D printing of microfluidic devices. It addresses the unique challenges of printing microfluidic devices with high precision and reliability. It is part of the [Munich Microfluidics Toolkit (MMFT)](https://www.cda.cit.tum.de/research/microfluidics/munich-microfluidics-toolkit/) by the [Chair for Design Automation](https://www.cda.cit.tum.de/) at the Technical University of Munich.
 
 ## Overview
 
