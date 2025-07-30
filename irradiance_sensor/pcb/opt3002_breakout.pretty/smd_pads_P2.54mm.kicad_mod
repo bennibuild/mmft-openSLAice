@@ -1,0 +1,158 @@
+(footprint "smd_pads_P2.54mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Harwin Male Horizontal Surface Mount Single Row 2.54mm (0.1 inch) Pitch PCB Connector, M20-89004xx, 4 Pins per row (https://cdn.harwin.com/pdfs/M20-890.pdf), generated with kicad-footprint-generator")
+	(tags "connector Harwin M20-890 horizontal")
+	(property "Reference" "REF**"
+		(at -1.524 -5.588 0)
+		(layer "F.SilkS")
+		(uuid "564181bd-0229-4f9d-bf92-0cc07698f029")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "smd_pads_P2.54mm"
+		(at 0 6.096 0)
+		(layer "F.Fab")
+		(uuid "e9b3aba8-a973-4c5b-9ec4-ede7c20c1724")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d56b7846-5390-4b04-88e3-a2b31dd635a8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5345cf4e-3de7-47a5-b8e8-40cc464a7425")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_poly
+		(pts
+			(xy 0 -4.63) (xy -0.34 -5.1) (xy 0.34 -5.1)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "899b0ad3-b604-481a-a77c-c926e78a0323")
+	)
+	(fp_rect
+		(start -1.587 -4.572)
+		(end 1.461 4.572)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "6a2ae10f-4a9f-4ca4-85a6-cb4e54f43288")
+	)
+	(fp_line
+		(start -0.9 -4.13)
+		(end -0.9 -3.49)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dfbad53f-a802-4fb4-bcbb-c7b364fb144e")
+	)
+	(fp_line
+		(start -0.9 -1.59)
+		(end -0.9 -0.95)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a4ef2c7c-3afe-4fd2-a208-f6d3edf1b7ca")
+	)
+	(fp_line
+		(start -0.9 0.95)
+		(end -0.9 1.59)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "67b8a3e1-f701-468c-a816-e02379ad9e0b")
+	)
+	(fp_line
+		(start -0.9 3.49)
+		(end -0.9 4.13)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "37cbb802-542e-48a7-a316-7a38de4ee727")
+	)
+	(pad "1" smd roundrect
+		(at 0 -3.81)
+		(size 2.5 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "f53fb459-e04f-43e6-b344-015e9ce47a0c")
+	)
+	(pad "2" smd roundrect
+		(at 0 -1.27)
+		(size 2.5 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "cf34aea4-1c07-47cb-b501-96589d53033d")
+	)
+	(pad "3" smd roundrect
+		(at 0 1.27)
+		(size 2.5 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "35758af0-276b-41ec-a6aa-95a30237e227")
+	)
+	(pad "4" smd roundrect
+		(at 0 3.81)
+		(size 2.5 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "4a3a41d4-5d7e-401c-ab16-cdafb3333828")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Connector_Harwin.3dshapes/Harwin_M20-89004xx_1x04_P2.54mm_Horizontal.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
