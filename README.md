@@ -1,25 +1,38 @@
-<div align="center">
-
 # OpenSLAice
-
-**A specialized slicer for microfluidic SLA/mSLA 3D printing**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 
+<p align="center">
+  <picture>
+    <img src="https://www.cda.cit.tum.de/research/microfluidics/logo-microfluidics-toolkit.png" width="60%">
+  </picture>
+</p>
+
 </div>
+
+The MMFT OpenSLAice is a specialized slicer for masked sterolithography (mSLA) 3D printing of microfluidic devices. It addresses the unique challenges of printing microfluidic devices with high precision and reliability. It is part of the [Munich Microfluidics Toolkit (MMFT)](https://www.cda.cit.tum.de/research/microfluidics/munich-microfluidics-toolkit/) by the [Chair for Design Automation](https://www.cda.cit.tum.de/) at the Technical University of Munich.
 
 ## Overview
 
-OpenSLAice is a specialized slicer for microfluidic SLA/mSLA 3D printing, developed as part of a bachelor thesis project. It addresses the unique challenges of printing microfluidic devices with high precision and reliability.
+1. **Setup:**
+   - *Initialization*: Printer (build volume, pixel resolution, z-stage movement) and resin (exposure time with regard to layer thickness) parameters are loaded.
+   - *Geometry Import*: The 3D part (STL) is imported and metadata included.
 
-### Key Innovations
+2. **Core Slicing:**
+   - *Feature Detection and Orientation*: The microfluidic channel network is detected and the 3D object is auto-oriented and placed accordingly to optimize channel alignment and reduce stair-step artifacts.
+   - *Z-Slicing*: Layer heights for slicing are determined and the object is sliced along the z-axis into 2D planes, based on dynamic or static layer heights.
+   - *XY-Rasterization*: Each 2D plane is converted into a bitmap mask aligned to the LCD pixel grid.
 
-1. **Physical Model-Based Calibration**: Single-print calibration method that predicts exposure times for arbitrary layer heights based on a physical model of light penetration.
+3. **Output and Calibration:**
+   - *(Optional) Automatic Part Arrangement*: If several objects are printed at the same time, they are arranged on the build platform.
+   - *Export*: The printer-specific export file including the printer, resin, and layer data is created and exported.
+   - *(Optional) Exposure Calibration*: If necessary, the resin–printer combination can be calibrated using a single print evaluation.
 
-2. **Automated Microfluidic Feature Detection**: Automatically detects and orients microfluidic features to minimize stair-stepping artifacts, resulting in smoother channel walls.
+## Contributors
 
-3. **Dynamic Layer Height Selection**: Intelligently balances print quality with speed by varying layer heights throughout the print - using fine layers for precise channels and thicker layers for stable channel top layers.
+OpenSLAice is a specialized slicer for microfluidic SLA/mSLA 3D printing, developed as part of a thesis project by Benjamin Liertz. 
+
 
 ## Getting Started
 
@@ -74,7 +87,7 @@ OpenSLAice/
 │   └── README.md            # Sensor usage instructions
 ├── OpenSLAice.ipynb         # Main Jupyter notebook for OpenSLAice
 ├── exp_calibration.ipynb    # Jupyter notebook for exposure calibration
-├── requirements.txt          # Python package dependencies
+├── requirements.txt         # Python package dependencies
 └── README.md                # Project overview and documentation
 ```
 
